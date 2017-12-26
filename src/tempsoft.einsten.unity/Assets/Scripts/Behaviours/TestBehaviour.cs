@@ -1,16 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class TestBehaviour : MonoBehaviour {
+namespace TempSoft.Einstein.Unity.Assets.Scripts.Behaviours
+{
+    public class TestBehaviour : MonoBehaviour
+    {
+        public int Counter;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        // Use this for initialization
+        public void Start()
+        {
+            Counter = 0;
+        }
+
+        // Update is called once per frame
+        public void Update()
+        {
+            ++Counter;
+        }
+    }
 }
+
